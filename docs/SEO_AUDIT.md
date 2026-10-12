@@ -33,4 +33,4 @@ No new structured data is emitted. This avoids asserting ratings, prices, produc
 - Illustrative defaults are labelled and must not be interpreted as live price content.
 - The site uses static rendering, so core explanatory copy is available without client JavaScript; interactive results require JavaScript.
 - A future domain change requires updating `NEXT_PUBLIC_SITE_URL` before deployment and verifying canonical, Open Graph, sitemap, and robots output.
-- Pre-deployment production response and rendered metadata verification is recorded in `docs/TEST_REPORT.md`; the Phase 2 production URLs require a final post-deployment check.
+- Post-deployment checks confirmed HTTP 200 for both Phase 2 routes, sitemap, and robots. The new titles and same-origin canonicals rendered correctly, and both routes appeared in the production sitemap.

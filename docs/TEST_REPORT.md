@@ -36,4 +36,8 @@ No coverage-percentage tool is configured, so no percentage is claimed.
 
 ## Unresolved verification
 
-The pre-Phase-2 production routes `/`, the fuel calculator, all three existing guides, `/about`, `/contact`, `/privacy`, `/methodology`, `/sitemap.xml`, and `/robots.txt` returned HTTP 200 before deployment. The fuel calculator canonical and Open Graph URL used `https://autohisab.vercel.app`; robots advertised the same-origin sitemap. Production had no valid support email configured and correctly showed the WhatsApp fallback. A dedicated narrow mobile-device visual pass is not automated; responsive CSS and overflow behavior were reviewed, but real-device rendering remains recommended.
+The pre-Phase-2 production routes `/`, the fuel calculator, all three existing guides, `/about`, `/contact`, `/privacy`, `/methodology`, `/sitemap.xml`, and `/robots.txt` returned HTTP 200 before deployment. The fuel calculator canonical and Open Graph URL used `https://autohisab.vercel.app`; robots advertised the same-origin sitemap. Production had no valid support email configured and correctly showed the WhatsApp fallback.
+
+After deployment, `/car-ownership-cost-calculator`, `/guides/total-car-ownership-cost-pakistan`, `/sitemap.xml`, and `/robots.txt` returned HTTP 200. The new calculator and guide served their unique titles and correct same-origin canonicals, and both URLs appeared in the production sitemap.
+
+A dedicated narrow mobile-device visual pass is not automated; responsive CSS and overflow behavior were reviewed, but real-device rendering remains recommended.

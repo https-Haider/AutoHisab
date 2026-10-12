@@ -25,7 +25,7 @@ Phase 2 is implemented. AutoHisab provides a fuel-cost calculator, a two-vehicle
 
 ## Deployment status
 
-The repository build is ready for deployment. The final production deployment URL and post-deployment HTTP checks are recorded in `IMPLEMENTATION_LOG.md` and `TEST_REPORT.md` after release.
+Phase 2 was deployed to `https://autohisab.vercel.app` on 12 October 2026. Both new routes, sitemap, and robots returned HTTP 200 after deployment, and the production alias served the expected canonical metadata.
 
 ## Next priorities
 
