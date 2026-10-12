@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Footer } from "@/components/footer";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { Header } from "@/components/header";
 import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
@@ -19,5 +20,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en-PK" className={geist.variable}><body className="flex min-h-screen flex-col bg-white text-slate-900 antialiased"><Header /><div className="flex-1">{children}</div><Footer /></body></html>;
+  return <html lang="en-PK" className={geist.variable}><body className="flex min-h-screen flex-col bg-white text-slate-900 antialiased"><Header /><div className="flex-1">{children}</div><Footer /><GoogleAnalytics /></body></html>;
 }

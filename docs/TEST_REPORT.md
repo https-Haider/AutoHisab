@@ -41,3 +41,13 @@ The pre-Phase-2 production routes `/`, the fuel calculator, all three existing g
 After deployment, `/car-ownership-cost-calculator`, `/guides/total-car-ownership-cost-pakistan`, `/sitemap.xml`, and `/robots.txt` returned HTTP 200. The new calculator and guide served their unique titles and correct same-origin canonicals, and both URLs appeared in the production sitemap.
 
 A dedicated narrow mobile-device visual pass is not automated; responsive CSS and overflow behavior were reviewed, but real-device rendering remains recommended.
+
+## Google Analytics integration
+
+- `npm test`: PASS — 16 tests, 0 failures.
+- `npm run lint`: PASS.
+- `npm run typecheck`: PASS.
+- `NEXT_PUBLIC_GA_ID=G-TEST123456 npm run build`: PASS.
+- Built output contained the expected Google tag URL and `gtag` configuration for the test measurement ID.
+- The integration returns no scripts when the variable is missing or does not match the GA4 `G-...` format.
+- At verification time, `vercel env ls` reported no environment variables for the linked `autohisab` project. Production analytics therefore remains dependent on configuring `NEXT_PUBLIC_GA_ID` in that exact project and redeploying.

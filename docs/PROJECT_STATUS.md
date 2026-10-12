@@ -14,6 +14,7 @@ Phase 2 is implemented. AutoHisab provides a fuel-cost calculator, a two-vehicle
 - Monthly, per-kilometre, difference, composition-chart, and table results.
 - Input validation, reset behavior, illustrative defaults, mobile layouts, and accessible labels/errors.
 - Unique metadata and canonicals, sitemap and robots endpoints, internal links, and server-rendered explanatory content.
+- Optional Google Analytics loading through a validated `NEXT_PUBLIC_GA_ID` environment variable.
 - Guides for fuel average, petrol budgeting, petrol/hybrid comparisons, and total ownership cost.
 
 ## Unfinished items and known limitations
@@ -22,6 +23,7 @@ Phase 2 is implemented. AutoHisab provides a fuel-cost calculator, a two-vehicle
 - Default values are illustrative. AutoHisab has no live fuel-price or vehicle-price feed.
 - No automated browser or device test suite is configured. Unit tests cover calculation logic; manual responsive and assistive-technology checks remain part of release QA.
 - A support email appears only when `NEXT_PUBLIC_SUPPORT_EMAIL` contains a valid configured address. WhatsApp remains the published fallback.
+- Google Analytics remains disabled when `NEXT_PUBLIC_GA_ID` is absent or malformed.
 
 ## Deployment status
 

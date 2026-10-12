@@ -36,3 +36,9 @@ The final command results and deployment verification are in `docs/TEST_REPORT.m
 - Commit `78ca906` was pushed to `origin/main`.
 - Vercel production deployment `autohisab-r4jc04hlb-dochaiderhunjra-gmailcoms-projects.vercel.app` completed and was aliased to `https://autohisab.vercel.app`.
 - Both Phase 2 routes returned HTTP 200 at the production alias with the expected title and canonical URL; sitemap and robots also returned HTTP 200.
+
+## 12 October 2026 — Google Analytics configuration
+
+- Added a root-layout Google Analytics integration using Next.js `Script` with `afterInteractive` loading.
+- The integration renders only for a valid `NEXT_PUBLIC_GA_ID` value beginning with `G-`; no identifier is hardcoded.
+- Updated the privacy policy, README, and project status to accurately disclose optional analytics.

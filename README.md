@@ -28,9 +28,10 @@ Set these environment variables in Vercel for the Production environment, then r
 ```bash
 NEXT_PUBLIC_SITE_URL=https://autohisab.vercel.app
 NEXT_PUBLIC_SUPPORT_EMAIL=your-real-support-address@example.com
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
-`NEXT_PUBLIC_SITE_URL` controls canonical links, Open Graph metadata, sitemap, and robots output. It defaults to the current Vercel production origin and accepts a future custom-domain origin. `NEXT_PUBLIC_SUPPORT_EMAIL` is optional; the contact page only displays an email when this value contains a valid address. Replace the example above with an inbox you control—do not copy the placeholder into production.
+`NEXT_PUBLIC_SITE_URL` controls canonical links, Open Graph metadata, sitemap, and robots output. It defaults to the current Vercel production origin and accepts a future custom-domain origin. `NEXT_PUBLIC_SUPPORT_EMAIL` is optional; the contact page only displays an email when this value contains a valid address. `NEXT_PUBLIC_GA_ID` is optional; Google Analytics loads only when it matches the GA4 `G-...` measurement-ID format. Replace the examples above with values you control—do not copy placeholders into production.
 
 ## Checks
 
@@ -50,4 +51,4 @@ npm run build
 - [Calculation methods](docs/CALCULATION_METHODS.md)
 - [Product owner handoff](docs/HANDOFF.md)
 
-AutoHisab intentionally has no database, authentication, payments, analytics, or advertising code.
+AutoHisab intentionally has no database, authentication, payments, or advertising code. Optional Google Analytics is documented in the privacy policy.
