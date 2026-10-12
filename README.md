@@ -37,10 +37,13 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 ```bash
 npm test
+npm run test:e2e
 npm run lint
 npm run typecheck
 npm run build
 ```
+
+Install Playwright's browser once on a new machine with `npx playwright install chromium`. The browser suite covers both calculators, all guides, metadata endpoints, and desktop/mobile Chromium projects.
 
 ## Documentation
 
@@ -50,5 +53,10 @@ npm run build
 - [SEO audit](docs/SEO_AUDIT.md)
 - [Calculation methods](docs/CALCULATION_METHODS.md)
 - [Product owner handoff](docs/HANDOFF.md)
+- [Phase 3 handoff](docs/PHASE_3_HANDOFF.md)
+- [Search Console setup](docs/SEARCH_CONSOLE_SETUP.md)
+- [Analytics plan](docs/ANALYTICS_PLAN.md)
+- [SEO opportunities](docs/SEO_OPPORTUNITIES.md)
+- [QA checklist](docs/QA_CHECKLIST.md)
 
 AutoHisab intentionally has no database, authentication, payments, or advertising code. Optional Google Analytics is documented in the privacy policy.
