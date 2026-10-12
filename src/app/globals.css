@@ -7,6 +7,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; }
+a:focus-visible { outline: 2px solid #0f9f94; outline-offset: 3px; }
 a, button, input { -webkit-tap-highlight-color: transparent; }
 button, input { font: inherit; }
 ::selection { background: #b9eee8; color: #0a2540; }
@@ -27,5 +28,8 @@ button, input { font: inherit; }
   .content-page h3 { @apply mt-7 text-lg font-bold text-navy; }
   .content-page p { @apply mt-4 leading-7 text-slate-600; }
   .content-page ul { @apply mt-4 list-disc space-y-2 pl-6 leading-7 text-slate-600; }
+  .content-page ol { @apply mt-4 list-decimal space-y-2 pl-6 leading-7 text-slate-600; }
+  .content-page a { @apply font-semibold text-teal-dark underline decoration-teal/30 underline-offset-4 hover:decoration-teal-dark focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal; }
+  .formula-box { @apply mt-5 rounded-2xl border border-teal/15 bg-teal-soft px-5 pb-5 pt-1 text-navy; }
 }
 .hero-grid { background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 54px 54px; mask-image: linear-gradient(to bottom, black, transparent 90%); }

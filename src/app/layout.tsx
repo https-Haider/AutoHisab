@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://autohisab.pk";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

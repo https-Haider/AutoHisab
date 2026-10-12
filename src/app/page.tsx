@@ -1,4 +1,7 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const Arrow = () => (
   <svg aria-hidden="true" viewBox="0 0 20 20" className="h-5 w-5" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -52,6 +55,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="section-space bg-white"><div className="page-container"><div className="max-w-2xl"><span className="eyebrow">Practical guides</span><h2 className="section-title mt-5">Understand the numbers behind your estimate</h2><p className="section-copy">Measure fuel economy, build a monthly petrol budget, and compare two vehicles using transparent assumptions.</p></div><div className="mt-10 grid gap-5 md:grid-cols-3">{[["/guides/how-to-calculate-fuel-average", "Calculate fuel average", "Use the full-tank method to work out a real-world km/L figure."], ["/guides/monthly-petrol-expense-pakistan", "Plan monthly petrol expense", "Turn your distance, mileage, and chosen pump price into a practical budget."], ["/guides/petrol-vs-hybrid-cost-pakistan", "Compare petrol and hybrid", "Compare fuel costs fairly and understand what a fuel-only comparison leaves out."]].map(([href, title, body]) => <article key={href} className="info-card flex flex-col"><h3 className="text-xl font-bold text-navy">{title}</h3><p className="mt-3 flex-1 leading-7 text-slate-600">{body}</p><Link className="mt-6 inline-flex items-center gap-2 font-bold text-teal-dark underline-offset-4 hover:underline focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal" href={href}>Read guide <Arrow /></Link></article>)}</div></div></section>
       <section className="section-space bg-white"><div className="page-container"><div className="rounded-3xl bg-navy px-6 py-12 text-center text-white sm:px-12 sm:py-16"><span className="eyebrow border-white/10 bg-white/10 text-teal-light">Start with your numbers</span><h2 className="mx-auto mt-5 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">Turn your next fuel fill into a useful monthly estimate.</h2><p className="mx-auto mt-4 max-w-xl leading-7 text-slate-300">The calculator is free, private, and takes less than a minute.</p><Link className="button-primary mt-8" href="/fuel-cost-calculator-pakistan">Open fuel calculator <Arrow /></Link></div></div></section>
     </main>
   );
