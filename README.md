@@ -1,6 +1,14 @@
 # AutoHisab
 
-Phase 1 of a mobile-first, Pakistan-focused vehicle ownership and fuel-cost calculator built with Next.js App Router, TypeScript, and Tailwind CSS.
+A mobile-first, Pakistan-focused vehicle ownership and fuel-cost calculator built with Next.js App Router, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Monthly and annual fuel-cost calculator in PKR.
+- Three-year and five-year side-by-side vehicle ownership comparison.
+- Depreciation, fuel, maintenance, insurance, taxes/fees, and one-time cost breakdowns.
+- Responsive charts, accessible forms, transparent formulas, and original guides.
+- Static SEO metadata, canonical URLs, sitemap, and robots endpoints.
 
 ## Local development
 
@@ -10,6 +18,8 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+
+Use `npm run build` and `npm start` to run the production build locally.
 
 ## Production environment
 
@@ -31,4 +41,13 @@ npm run typecheck
 npm run build
 ```
 
-Phase 1 intentionally has no database, authentication, payments, analytics, or advertising code.
+## Documentation
+
+- [Project status](docs/PROJECT_STATUS.md)
+- [Implementation log](docs/IMPLEMENTATION_LOG.md)
+- [Test report](docs/TEST_REPORT.md)
+- [SEO audit](docs/SEO_AUDIT.md)
+- [Calculation methods](docs/CALCULATION_METHODS.md)
+- [Product owner handoff](docs/HANDOFF.md)
+
+AutoHisab intentionally has no database, authentication, payments, analytics, or advertising code.
